@@ -13,7 +13,6 @@
   </head>
   <body>
     <div class="container">
-      <!-- Top Bar -->
       <div class="box1">
         <div class="top-bar">
           <div class="logo">News Portal</div>
@@ -24,7 +23,6 @@
         </div>
       </div>
 
-      <!-- Banner/Advertisement -->
       <div class="box2">
         <div class="banner">
           <img
@@ -34,7 +32,6 @@
         </div>
       </div>
 
-      <!-- Main Image -->
       <div class="box6">
         <div class="main-image">
           <button>Kyrgyz</button>
@@ -42,10 +39,8 @@
         </div>
       </div>
 
-      <!-- Navigation Menu -->
       <div class="box3">
         <nav class="main-menu">
-          <!-- Burger Button -->
           <button class="burger-btn" id="burgerBtn" aria-label="Menu">
             <span></span>
             <span></span>
@@ -88,13 +83,12 @@
         </nav>
       </div>
 
-      <!-- Main Content -->
       <div class="box4">
         <div class="main-content">
           <article class="news-article">
             <h2>Top Story of the Day</h2>
             <p class="news-date">January 17, 2026</p>
-            <img src="./minimum-720x338.jpg" alt="News" />
+            <img src="./img/futzal.jpg" alt="News" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -118,7 +112,6 @@
         </div>
       </div>
 
-      <!-- Side News Column -->
       <div class="box7">
         <div class="side-news">
           <h3>Latest News</h3>
@@ -146,7 +139,6 @@
         </div>
       </div>
 
-      <!-- Right Sidebar -->
       <div class="box8">
         <div class="sidebar">
           <div class="widget">
@@ -177,7 +169,6 @@
         </div>
       </div>
 
-      <!-- Footer -->
       <div class="box5">
         <footer class="footer">
           <div class="footer-content">
@@ -229,7 +220,6 @@
     </div>
 
     <script>
-      // Burger menu
       const burgerBtn = document.getElementById("burgerBtn");
       const menuList = document.getElementById("menuList");
 
@@ -238,7 +228,6 @@
         menuList.classList.toggle("active");
       });
 
-      // Close menu when clicking outside
       document.addEventListener("click", function (event) {
         const isClickInside =
           burgerBtn.contains(event.target) || menuList.contains(event.target);
@@ -249,7 +238,6 @@
         }
       });
 
-      // Close menu when clicking on menu item
       const menuLinks = menuList.querySelectorAll("a");
       menuLinks.forEach((link) => {
         link.addEventListener("click", function () {

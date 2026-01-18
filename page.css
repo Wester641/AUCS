@@ -7,7 +7,6 @@
 body {
   background-repeat: no-repeat;
   max-width: 1278px;
-  min-height: 1583px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #333;
@@ -38,7 +37,6 @@ body {
     "five five five five";
 }
 
-/* GRID AREAS */
 .box1 {
   grid-area: one;
 }
